@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useMap } from "react-leaflet/hooks";
+import "leaflet/dist/leaflet.css";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { Icon } from "leaflet";
+import { Routes, Route, Link } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import MapPage from "./pages/MapPage";
+import { useState } from "react";
 
 function App() {
+  const [startPlaceInput, setStartPlaceInput] = useState({
+    city: "",
+    street: "",
+    street_number: "",
+    country: "",
+  });
+  const [finishPlaceInput, setFinishPlaceInput] = useState({
+    city: "",
+    street: "",
+    street_number: "",
+    country: "",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <MainPage
+            startPlaceInput={startPlaceInput}
+            setStartPlaceInput={setStartPlaceInput}
+            finishPlaceInput={finishPlaceInput}
+            setFinishPlaceInput={setFinishPlaceInput}
+          />
+        }
+      />
+      <Route
+        path="map"
+        element={
+          <MapPage
+            startPlaceInput={startPlaceInput}
+            finishPlaceInput={finishPlaceInput}
+          />
+        }
+      />
+    </Routes>
   );
 }
 

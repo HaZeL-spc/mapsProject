@@ -1,0 +1,52 @@
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container .form-container-address-data {
+  width: 70%;
+}
+
+.form-container .form-container-address-data .text-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form-container .form-container-address-data .text-input-container .start-place-input-container, .form-container .form-container-address-data .text-input-container .finish-place-input-container {
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+.form-container .form-container-address-data .text-input-container .start-place-input-container input, .form-container .form-container-address-data .text-input-container .finish-place-input-container input {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.form-container .form-container-address-data .text-input-container .blank-space {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+/*# sourceMappingURL=MainPage.css.map */
