@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  background-color: #C1DED9;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 300;
 }
 
 .App-logo {

@@ -1,34 +1,111 @@
-.form-container {
+
+.main-page-container {
+    padding-top: 100px;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin: auto;
 
-    & .form-container-address-data {
-        width: 70%;
-        // display: flex;
-        // flex-direction: row;
-        
-        & .text-input-container {
+    .form-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+
+        & .form-select {
+            appearance: none;
+            // Additional resets for further consistency
+            // background-color: #2fa8cc;
+            border: 5px solid #5DB37E;
+            color:black;
+            padding:10px;
+            // font-size: 25px;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+            outline: none;
+            cursor: pointer;
+
+            & ::-ms-expand{
+                display: none;
+            }
+        }
+    
+        & .form-container-address-data {
+            width: 70%;
             display: flex;
-            flex-direction: row;
-            & .start-place-input-container, .finish-place-input-container {
-                padding: 20px;
-                border: 3px solid black;
-                border-radius: 20px;
-                flex: 40%;
+            flex-direction: column;
+            justify-content: center;
+            & .text-input-container {
+                & .input-header {
+                    font-size: 50px;
+                    font-weight: 300;
+                    margin: 10px 0px 10px 0px;  
+                }
 
-                & input {
-                    text-align: center;
-                    padding-top: 10px;
-                    margin-top: 5px;
-                    width: 100%;
+                display: flex;
+                flex-direction: column;
+                & .start-place-input-container, .finish-place-input-container {
+                    border-radius: 20px;
+                    flex: 40%;
+                    padding-bottom: 40px;
+
+                    & input {
+                        all: unset;
+                        text-align: left;
+                        padding: 5px;
+                        margin-top: 5px;
+                        font-size: 25px;
+                        width: 100%;
+                        border: none;
+                        border-bottom: 5px solid #5DB37E;
+
+                        transition: all 0.4s ease;
+                        &::placeholder {
+                            opacity: 0.35;
+                        }
+                        &:focus {
+                            border-color: #2fa8cc;
+                        }
+                    }
+
+                    & .wrong-data {
+                        border-color: #c04242;
+                    }
                 }
             }
-    
-            & .blank-space {
-                flex: 20%;
+
+            & .input-submit-button {
+                all: unset;
+                background-color: #5DB37E;
+                color:white;
+
+                font-size: 25px;
+                width:60%;
+                height: 40px;
+                margin:auto;
+                border-radius: 5px;
+                text-align: center;
+
+                cursor: pointer;
             }
         }
     }
+
+    & .car-world-image {
+        width: 500px;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/carWorld.png");
+    }
+}
+
+.error-message {
+    color: #c04242;
+    font-size: 20px;
 }

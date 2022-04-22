@@ -1,0 +1,19 @@
+.map-container {
+  display: flex;
+  flex-direction: column;
+
+  & .button-default-style {
+    all: unset;
+    background-color: #5DB37E;
+    color:white;
+
+    font-size: 25px;
+    width:60%;
+    height: 40px;
+    margin:auto;
+    border-radius: 5px;
+    text-align: center;
+    margin-top:100px;
+    cursor: pointer;
+  }
+}

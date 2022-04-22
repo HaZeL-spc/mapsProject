@@ -1,4 +1,20 @@
-.form-container {
+.main-page-container {
+  padding-top: 100px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.main-page-container .form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,41 +28,127 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
 }
 
-.form-container .form-container-address-data {
+.main-page-container .form-container .form-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 5px solid #5DB37E;
+  color: black;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-page-container .form-container .form-select ::-ms-expand {
+  display: none;
+}
+
+.main-page-container .form-container .form-container-address-data {
   width: 70%;
-}
-
-.form-container .form-container-address-data .text-input-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.form-container .form-container-address-data .text-input-container .start-place-input-container, .form-container .form-container-address-data .text-input-container .finish-place-input-container {
-  padding: 20px;
-  border: 3px solid black;
+.main-page-container .form-container .form-container-address-data .text-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .input-header {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 10px 0px 10px 0px;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container {
   border-radius: 20px;
   -webkit-box-flex: 40%;
       -ms-flex: 40%;
           flex: 40%;
+  padding-bottom: 40px;
 }
 
-.form-container .form-container-address-data .text-input-container .start-place-input-container input, .form-container .form-container-address-data .text-input-container .finish-place-input-container input {
-  text-align: center;
-  padding-top: 10px;
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container input, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container input {
+  all: unset;
+  text-align: left;
+  padding: 5px;
   margin-top: 5px;
+  font-size: 25px;
   width: 100%;
+  border: none;
+  border-bottom: 5px solid #5DB37E;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.form-container .form-container-address-data .text-input-container .blank-space {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container input::-webkit-input-placeholder, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container input::-webkit-input-placeholder {
+  opacity: 0.35;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container input:-ms-input-placeholder, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container input:-ms-input-placeholder {
+  opacity: 0.35;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container input::-ms-input-placeholder, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container input::-ms-input-placeholder {
+  opacity: 0.35;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container input::placeholder, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container input::placeholder {
+  opacity: 0.35;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container input:focus, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container input:focus {
+  border-color: #2fa8cc;
+}
+
+.main-page-container .form-container .form-container-address-data .text-input-container .start-place-input-container .wrong-data, .main-page-container .form-container .form-container-address-data .text-input-container .finish-place-input-container .wrong-data {
+  border-color: #c04242;
+}
+
+.main-page-container .form-container .form-container-address-data .input-submit-button {
+  all: unset;
+  background-color: #5DB37E;
+  color: white;
+  font-size: 25px;
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-page-container .car-world-image {
+  width: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/carWorld.png");
+}
+
+.error-message {
+  color: #c04242;
+  font-size: 20px;
 }
 /*# sourceMappingURL=MainPage.css.map */

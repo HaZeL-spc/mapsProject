@@ -5,45 +5,28 @@ import { Icon } from "leaflet";
 import { Routes, Route, Link } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import MapPage from "./pages/MapPage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "./App.css";
 
 function App() {
-  const [startPlaceInput, setStartPlaceInput] = useState({
-    city: "",
-    street: "",
-    street_number: "",
-    country: "",
-  });
-  const [finishPlaceInput, setFinishPlaceInput] = useState({
-    city: "",
-    street: "",
-    street_number: "",
-    country: "",
-  });
+  const [totalData, setTotalData] = useState([]);
+
+  useEffect(() => {
+    console.log(totalData);
+  }, [totalData]);
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <MainPage
-            startPlaceInput={startPlaceInput}
-            setStartPlaceInput={setStartPlaceInput}
-            finishPlaceInput={finishPlaceInput}
-            setFinishPlaceInput={setFinishPlaceInput}
-          />
-        }
-      />
-      <Route
-        path="map"
-        element={
-          <MapPage
-            startPlaceInput={startPlaceInput}
-            finishPlaceInput={finishPlaceInput}
-          />
-        }
-      />
-    </Routes>
+    <div className="App">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainPage setTotalData={setTotalData} totalData={totalData} />
+          }
+        />
+        <Route path="map" element={<MapPage totalData={totalData} />} />
+      </Routes>
+    </div>
   );
 }
 
