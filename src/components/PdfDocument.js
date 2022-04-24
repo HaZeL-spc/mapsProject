@@ -60,21 +60,22 @@ const PdfDocument = ({ routeData, totalData, inputKmData }) => {
     doc.text(20, 220, `country: ${changePolishSigns(finishData.country)}`);
 
     // ROUTE DATA
+    doc.text(220, 60, `pln/km: ${inputKmData}`);
     doc.text(
       220,
-      60,
+      80,
       `distance: ${Math.round((routeData.distance / 1000) * 100) / 100} km`
     );
     doc.text(
       220,
-      80,
+      100,
       `time: ${Math.floor(routeData.time / 3600)} hour ${Math.round(
         (routeData.time % 3600) / 60
       )} minutes`
     );
     doc.text(
       220,
-      100,
+      120,
       `cost: ${
         Math.round(
           (routeData.distance / 1000) * parseFloat(inputKmData) * 100
@@ -83,11 +84,11 @@ const PdfDocument = ({ routeData, totalData, inputKmData }) => {
     );
     doc.text(
       220,
-      120,
+      140,
       `how many days: ${Math.ceil(routeData.distance / 1000 / 800)} days`
     );
 
-    doc.save("a.pdf");
+    doc.save(`${startData.city}_to_${finishData.city}.pdf`);
   };
 
   return (

@@ -17,8 +17,6 @@ code {
   height: 100vh;
 }
 
-.markercluster-map { height: 90vh; }
-
 .leaflet-control-container .leaflet-routing-container-hide {
   display: none;
 }

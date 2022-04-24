@@ -98,6 +98,8 @@
     }
 
     & .car-world-image {
+        // width: 40%;
+        // height: 40vh;
         width: 50%;
         background-position: center;
         background-size: cover;
@@ -108,4 +110,33 @@
 .error-message {
     color: #c04242;
     font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+    .main-page-container {
+        flex-direction: column;
+
+        & .form-container {
+            width: 100%;
+        }
+
+        & .form-container-address-data {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-page-container {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    .form-container-address-data {
+        width: 90%;
+    }
 }
