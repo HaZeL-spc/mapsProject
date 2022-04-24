@@ -1,8 +1,11 @@
 {
   "name": "maps-project",
+  "homepage": "https://HaZeL-spc.github.io/mapsProject",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,6 +34,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^14.1.1",
     "enzyme": "^3.11.0",
+    "gh-pages": "^3.2.3",
     "jest-dom": "^4.0.0",
     "jspdf": "^2.5.1",
     "leaflet": "^1.8.0",

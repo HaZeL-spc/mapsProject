@@ -19,12 +19,15 @@ function App() {
     <div className="App">
       <Routes>
         <Route
-          path="/"
+          path="/mapsProject"
           element={
             <MainPage setTotalData={setTotalData} totalData={totalData} />
           }
         />
-        <Route path="map" element={<MapPage totalData={totalData} />} />
+        <Route
+          path="/mapsProject/map"
+          element={<MapPage totalData={totalData} />}
+        />
       </Routes>
     </div>
   );

@@ -44,7 +44,7 @@ function MapPage({ totalData }) {
   };
 
   const changePage = () => {
-    navigate("/", { changed: true });
+    navigate("/mapsProject", { changed: true });
   };
 
   const checkCorrectnessInput = (e) => {
