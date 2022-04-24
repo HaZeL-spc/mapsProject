@@ -174,6 +174,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={startPlaceInput["city"]}
               onChange={handelChangeStart}
               name="city"
+              data-testid="city-start"
             />
             <input
               placeholder="street"
@@ -182,6 +183,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={startPlaceInput["street"]}
               onChange={handelChangeStart}
               name="street"
+              data-testid="street-start"
             />
             <input
               placeholder="street_number"
@@ -190,6 +192,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={startPlaceInput["street_number"]}
               onChange={handelChangeStart}
               name="street_number"
+              data-testid="street_number-start"
             />
             <input
               placeholder="country"
@@ -198,6 +201,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={startPlaceInput["country"]}
               onChange={handelChangeStart}
               name="country"
+              data-testid="country-start"
             />
           </div>
           <h2 className="input-header">Finish</h2>
@@ -209,6 +213,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={finishPlaceInput["city"]}
               onChange={handelChangeFinish}
               name="city"
+              data-testid="city-finish"
             />
             <input
               placeholder="street"
@@ -217,6 +222,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={finishPlaceInput["street"]}
               onChange={handelChangeFinish}
               name="street"
+              data-testid="street-finish"
             />
             <input
               placeholder="street_number"
@@ -225,6 +231,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={finishPlaceInput["street_number"]}
               onChange={handelChangeFinish}
               name="street_number"
+              data-testid="street_number-finish"
             />
             <input
               placeholder="country"
@@ -233,6 +240,7 @@ const InputView = ({ setTotalData, totalData }) => {
               value={finishPlaceInput["country"]}
               onChange={handelChangeFinish}
               name="country"
+              data-testid="country-finish"
             />
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { MapContainer } from "react-leaflet/MapContainer";
-import { TileLayer } from "react-leaflet/TileLayer";
-import { Marker, Popup } from "react-leaflet";
 // import { useMap } from "react-leaflet/hooks";
+
 import "leaflet/dist/leaflet.css";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { MapContainer } from "react-leaflet/MapContainer";
+import { TileLayer } from "react-leaflet/TileLayer";
 import { GeoSearchControl, OpenStreetMapProvider } from "leaflet-geosearch";
 import { Icon } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
@@ -92,6 +92,7 @@ function MapPage({ totalData }) {
               className="input-km"
               placeholder="pln/km"
               ref={inputKmRef}
+              data-testid="input-km"
             />
             <button
               className="button-default-style input-km-submit"
