@@ -119,7 +119,7 @@ const InputView = ({ setTotalData, totalData }) => {
         ...state,
       ]);
 
-      navigate("/mapsProject/map", { replace: true });
+      navigate("/map", { replace: true });
     }
   };
 
