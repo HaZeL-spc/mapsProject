@@ -17,9 +17,10 @@ function CustomLayer({ startData, finishData }) {
     markerBounds.extend([startData.lng, startData.lat]);
     markerBounds.extend([finishData.lng, finishData.lat]);
 
-    if (startData.lat != "" && finishData.lat != "") {
+    if (startData.lat !== "" && finishData.lat !== "") {
       console.log(markerBounds);
-      map.flyToBounds(markerBounds);
+      // map.flyToBounds(markerBounds);
+      map.fitBounds(markerBounds);
     }
   }, []);
 

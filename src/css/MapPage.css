@@ -2,10 +2,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .map-container .button-default-style {
@@ -13,12 +13,152 @@
   background-color: #5DB37E;
   color: white;
   font-size: 25px;
-  width: 60%;
+  width: 400px;
   height: 40px;
-  margin: auto;
   border-radius: 5px;
   text-align: center;
-  margin-top: 100px;
+  margin-bottom: 100px;
   cursor: pointer;
+}
+
+.map-container .input-data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.map-container .input-data-container .button-download-pdf {
+  cursor: pointer;
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid #5DB37E;
+  font-size: 20px;
+}
+
+.map-container .input-data-container .results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.map-container .input-data-container .results-container .results-headers {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.map-container .input-data-container .results-container .results-data {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.map-container .input-data-container .results-container .header {
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.map-container .input-data-container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+}
+
+.map-container .input-data-container .input-container .input-km {
+  all: unset;
+  padding: 5px;
+  margin-top: 100px;
+  font-size: 25px;
+  width: 100px;
+  border: none;
+  border-bottom: 5px solid #5DB37E;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.map-container .input-data-container .input-container .input-km::-webkit-input-placeholder {
+  opacity: 0.35;
+}
+
+.map-container .input-data-container .input-container .input-km:-ms-input-placeholder {
+  opacity: 0.35;
+}
+
+.map-container .input-data-container .input-container .input-km::-ms-input-placeholder {
+  opacity: 0.35;
+}
+
+.map-container .input-data-container .input-container .input-km::placeholder {
+  opacity: 0.35;
+}
+
+.map-container .input-data-container .input-container .input-km:focus {
+  border-color: #2fa8cc;
+}
+
+.map-container .input-data-container .input-container .wrong-data {
+  border-color: #c04242;
+}
+
+.map-container .input-data-container .input-container .input-km-submit {
+  all: unset;
+  background-color: #5DB37E;
+  color: white;
+  font-size: 25px;
+  width: 110px;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-container-map-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=MapPage.css.map */

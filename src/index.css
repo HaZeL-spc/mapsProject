@@ -13,8 +13,8 @@ code {
 }
 
 .leaflet-container {
-  width: 100wh; 
-  height: 60vh;
+  width: 60vw; 
+  height: 100vh;
 }
 
 .markercluster-map { height: 90vh; }

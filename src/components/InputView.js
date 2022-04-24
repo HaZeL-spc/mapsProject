@@ -57,11 +57,11 @@ const InputView = ({ setTotalData, totalData }) => {
   };
 
   const getData = async (data, textData) => {
-    let stringData = "";
-    for (const [key, value] of Object.entries(data)) {
-      stringData = stringData + value + ", ";
-    }
-    stringData = stringData.slice(0, -2);
+    let stringData = `${data.city}, ${data.street} ${data.street_number}, ${data.country}`;
+    // for (const [key, value] of Object.entries(data)) {
+    //   stringData = stringData + value + ", ";
+    // }
+    // stringData = stringData.slice(0, -2);
     console.log(stringData);
 
     const results = await provider.search({
