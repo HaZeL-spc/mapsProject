@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mapsProject/static/css/main.9aa5ef14.css",
+    "main.js": "/mapsProject/static/js/main.96a03832.js",
+    "static/js/498.39d778d4.chunk.js": "/mapsProject/static/js/498.39d778d4.chunk.js",
+    "static/js/703.23c96d13.chunk.js": "/mapsProject/static/js/703.23c96d13.chunk.js",
+    "static/js/760.6c26bf83.chunk.js": "/mapsProject/static/js/760.6c26bf83.chunk.js",
+    "static/js/787.5a9bfbab.chunk.js": "/mapsProject/static/js/787.5a9bfbab.chunk.js",
+    "static/media/carWorld.png": "/mapsProject/static/media/carWorld.c70c902df73a120d1884.png",
+    "index.html": "/mapsProject/index.html",
+    "main.9aa5ef14.css.map": "/mapsProject/static/css/main.9aa5ef14.css.map",
+    "main.96a03832.js.map": "/mapsProject/static/js/main.96a03832.js.map",
+    "498.39d778d4.chunk.js.map": "/mapsProject/static/js/498.39d778d4.chunk.js.map",
+    "703.23c96d13.chunk.js.map": "/mapsProject/static/js/703.23c96d13.chunk.js.map",
+    "760.6c26bf83.chunk.js.map": "/mapsProject/static/js/760.6c26bf83.chunk.js.map",
+    "787.5a9bfbab.chunk.js.map": "/mapsProject/static/js/787.5a9bfbab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aa5ef14.css",
+    "static/js/main.96a03832.js"
+  ]
+}
