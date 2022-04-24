@@ -114,8 +114,8 @@ function MapPage({ totalData }) {
                     {Math.round((routeData.distance / 1000) * 100) / 100} km
                   </h3>
                   <h3 className="header">
-                    {Math.floor(routeData.time / 3600)} hour{" "}
-                    {Math.round((routeData.time % 3600) / 60)} minutes
+                    {Math.floor(routeData.time / 3600)} h{" "}
+                    {Math.round((routeData.time % 3600) / 60)} min
                   </h3>
                   <h3 className="header">
                     {Math.round(

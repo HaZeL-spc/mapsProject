@@ -161,4 +161,57 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media (max-width: 1200px) {
+  .map-container .button-default-style {
+    width: 270px;
+  }
+  .map-container .input-data-container .button-download-pdf {
+    width: 270px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container-map-page {
+    width: 80%;
+    margin: auto;
+  }
+  .map-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map-container .button-default-style {
+    margin-top: 50px;
+    width: 350px;
+  }
+  .map-container .input-data-container {
+    margin-top: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .map-container .input-data-container .input-container .input-km {
+    margin: auto;
+  }
+  .leaflet-container {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-container .input-data-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map-container .button-default-style {
+    width: 220px;
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=MapPage.css.map */

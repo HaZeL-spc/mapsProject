@@ -108,3 +108,60 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 1200px) {
+  .map-container {
+    & .button-default-style{
+      width:270px;
+    }
+    & .input-data-container {
+      & .button-download-pdf {
+        width: 270px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container-map-page {
+    width: 80%;
+    margin: auto;
+  }
+
+  .map-container {
+    flex-direction: column;
+
+    & .button-default-style{
+      margin-top:50px;
+      width:350px;
+    }
+
+    & .input-data-container {
+      margin-top: 40px;
+      flex-direction: row;
+
+      & .input-container {
+        & .input-km {
+          margin:auto;
+        }
+      }
+    }
+  }
+
+  .leaflet-container {
+    width: 100vw; 
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    &   .input-data-container {
+      flex-direction: column; 
+    }
+    & .button-default-style{
+      width:220px;
+      font-size: 20px;
+    }
+  }
+}
