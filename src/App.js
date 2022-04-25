@@ -13,6 +13,7 @@ function App() {
 
   useEffect(() => {
     console.log(totalData);
+    console.log("21", process.env.PUBLIC_URL);
   }, [totalData]);
 
   console.log(process.env.PUBLIC_URL);
