@@ -64,6 +64,8 @@ function MapPage({ totalData }) {
     setInputKmData(inputKm);
   };
 
+  if (!finishData["lng"]) return <div className="map-container"></div>;
+
   return (
     <div className="map-container">
       <MapContainer center={[51.505, -0.09]} zoom={3} scrollWheelZoom={false}>

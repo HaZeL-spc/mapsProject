@@ -159,7 +159,7 @@ const InputView = ({ setTotalData, totalData }) => {
             show history
           </option>
           {totalData.map((element, index) => (
-            <option value={index} className="select-value">
+            <option key={index} value={index} className="select-value">
               {element["start"]["city"]} -&gt; {element["finish"]["city"]}
             </option>
           ))}
