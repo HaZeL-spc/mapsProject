@@ -77,9 +77,11 @@ const PdfDocument = ({ routeData, totalData, inputKmData }) => {
       220,
       120,
       `cost: ${
-        Math.round(
-          (routeData.distance / 1000) * parseFloat(inputKmData) * 100
-        ) / 100
+        (1.1 *
+          Math.round(
+            (routeData.distance / 1000) * parseFloat(inputKmData) * 100
+          )) /
+        100
       } pln`
     );
     doc.text(
