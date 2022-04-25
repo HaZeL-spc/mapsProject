@@ -15,6 +15,8 @@ function App() {
     console.log(totalData);
   }, [totalData]);
 
+  console.log(process.env.PUBLIC_URL);
+
   return (
     <div className="App">
       <Routes>
