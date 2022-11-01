@@ -140,11 +140,73 @@
   cursor: pointer;
 }
 
-.main-page-container .car-world-image {
-  width: 50%;
+.main-page-container .main-page-images {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-page-container .main-page-images .car-world-image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-position: center;
   background-size: cover;
   background-image: url("../images/carWorld.png");
+}
+
+.main-page-container .main-page-images .world-image {
+  width: 90%;
+  max-width: 600px;
+}
+
+@-webkit-keyframes moveCar {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveCar {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.main-page-container .main-page-images .car-image {
+  width: 50%;
+  max-width: 300px;
+  max-height: 80%;
+  -webkit-animation: moveCar 1s infinite;
+          animation: moveCar 1s infinite;
 }
 
 .error-message {
@@ -164,6 +226,12 @@
   }
   .main-page-container .form-container-address-data {
     width: 100%;
+  }
+  .main-page-images .world-image {
+    display: none;
+  }
+  .main-page-images .car-image {
+    display: none;
   }
 }
 
